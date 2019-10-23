@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	<!-- Validator wanted language included as an option.-->
+	
 <html lang="en-ca">
 
 <head>
@@ -8,6 +8,7 @@
 	<meta name="Author" content="Leslie Golding">
 	<meta name="description" content="This is Assignment 2">
 </head>
+
 <body>
 	<header id="header">
 		<h1>Employee List</h1>
@@ -55,6 +56,7 @@
             	</tr>
             </tfoot>
 		</table>
+		<!--I cannot get the border to go around the table. Again, not sure what I'm doing wrong, and I cannot find the instructions in the notes. I've gone through w3.schools looking, but I can't get what they say to work.-->
 	</section>
 	<section id="images" class="main-section">
 		<h2>Animals</h2>
@@ -80,44 +82,45 @@
 					<figcaption>This is a Hawk.</figcaption>
 				</figure>
 			</article>
+	</section>
+	<!--This is where it falls apart. I cannot get it to validate, and nothing shows for me past the images. No idea where I'm going wrong.-->
+	<section>
+        <h3>HTML Entities</h3>
+            <article>
+            	<p>Non Breaking Space : &nbsp;</p>
+            	<p>ampersand : &#38;</p>
+            	<p>Pound : &#163;</p>
+            	<p>Copyright : &#169;</p>
+            </article>
+    </section>
+    <section id="special-tags" class="main-section">
+        <h4>Special Tags :</h4>
+            <article id="st-dl" class="special-tag">
+                <dl> 
+            		<dt>Coffee</dt> 
+                	<dd>-black hot drink</dd> 
+    				<dt>Milk</dt> 
+    				<dd>-white cold drink</dd> 
+     			</dl>
+            </article>
+            <article id="st-abbr" class="special-tag">
+            	<p>HTML</p>
+            </article>
+        	<article id="st-abbr" class="special-tag">
+            	<p>CSS</p>
+            </article>
+           	<article class="special-tag" id="details">
+            	<details> 
+				    <summary>What is a mobile Phone?</summary>
+				    <p>A mobile phone, cell phone or hand phone, sometimes shortened to simply mobile, cell or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area.</p>
+				</details>
+			</article>
 		</section>
-		<section id="entities" class="main-section">
-            <h2>HTML Entities</h2>
-            	<article>
-            		<p>Non Breaking Space : &nbsp;</p>
-            		<p>ampersand : &#38;</p>
-            		<p>Pound : &#163;</p>
-            		<p>Copyright : &#169;</p>
-            	</article>
-        </section>
-        <section id="special-tags" class="main-section">
-            <h2>Special Tags :</h2>
-            	<article id="st-dl" class="special-tag">
-                 	<dl> 
-            			<dt>Coffee</dt> 
-                		<dd>-black hot drink</dd> 
-    					<dt>Milk</dt> 
-    					<dd>-white cold drink</dd> 
-     				</dl>
-            	</article>
-             	<article id="st-abbr" class="special-tag">
-            		<p>HTML</p>
-            	</article>
-        		<article id="st-abbr" class="special-tag">
-            		<p>CSS</p>
-            	</article>
-
-            	<article class="special-tag" id="details">
-            		<details> 
-				       <summary>What is a mobile Phone?</summary>
-				       <p>A mobile phone, cell phone or hand phone, sometimes shortened to simply mobile, cell or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area.</p>
-					</details>
-				</article>
-				<article>
-					<h3>Hidden Comment:</h3>
-						<!--This is a hidden comment.-->
-				</article>
-		</section>
+		<section>
+			<article>
+				<h5>Hidden Comment:</h5>
+					<!--This is a hidden comment.-->
+			</article>
+		</section>	
 	</main>	
-
 </body>
