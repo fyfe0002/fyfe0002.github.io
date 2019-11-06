@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+	<title>Assignment 3 - Forms</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Leslie Golding">
+	<meta name="description" content="This is Assignment 3">
+</head>
+
+<body>
+	<div id="wrapper" class="wrapper">
+		<section id="html-forms" class="main-section">
+			<form action="somepage.php" method="get">
+				<div id="fn-container" class="form-elm">
+					<label for="firstname">First name</label>
+					<!--This is the First Name text box. -->
+					<input type="text" name="firstname" id="firstname" placeholder="Enter first name here">
+				</div>
+				<div id="ln-container" class="form-elm">
+					<label for="lastname">Last name</label>
+					<!--This is the Last Name text box. -->
+					<input type="text" name="lastname" id="lastname" placeholder="Enter last name here">
+				</div>
+				<div id="email-container" class="form-elm">
+					<label for="email">Email</label>
+					<!--This is the Email text box. I did not make it readonly, so that information could be entered into the form.-->
+					<input type="email" name="email" id="email" value="example@g.com">
+				</div>
+				<div id="pass-container" class="form-elm">
+					<label for="pass">Password</label>
+					<!--This is the Password required box. -->
+					<input type="password" name="pass" id="pass" required>
+				</div>
+				<div id="intro-container" class="form-elm">
+					<label for="introductorytext">Introductory Text</label>
+					<!--This is the Introductory Text text box, for information about the person. -->
+					<textarea name="introductorytext" id="introductorytext" placeholder="Enter introductory text here">
+						This is for introductory text
+					</textarea>
+				</div>
+				<div id="st-container" class="form-elm">
+					<label for="dte">Date of Birth</label>
+					<!--This is the DOB text box. -->
+					<input type="date" name="dte" id="dte"><br>
+					<label for="num">Mobile Number</label>
+					<!--This is the Mobile Number text box. -->
+					<input type="number" id="num" name="num" min="-2" max="20" required><br>
+				</div>
+				<div id="radio-container" class="form-elm">
+					<p>Gender</p>
+					<!--This is the Gender radio box. -->
+					<label for="male">
+						<input type="radio" name="like-form" id="male" value="male" checked>
+						Male
+					</label>
+					<label for="female">
+						<input type="radio" name="like-form" id="female" value="female">
+						Female
+					</label>
+					<label for="other">
+						<input type="radio" name="like-form" id="other" value="other">
+						Other
+					</label>
+
+				</div>
+				<div id="address-container" class="form-elm">
+					<label for="address">Address</label>
+					<!--This is the Address text box. -->
+					<textarea name="address" id="address" placeholder="Enter address here">
+						This is for the street address.
+					</textarea>
+				</div>
+				<div id="city-container" class="form-elm">
+					<label for="city">City</label>
+					<!--This is the City text box. -->
+					<textarea name="city" id="city" placeholder="Enter city here">
+					</textarea>
+				</div>
+				<div id="province-drop-container" class="form-elm">
+					<label for="province">Province</label>
+					<!--This is the Province drop down box. -->
+					<select name="province" id="province">
+						<option value="alberta">Alberta</option>
+						<option value="british_columbia">British Columbia</option>
+						<option value="manitoba" selected>Manitoba</option>
+						<option value="new_brunswick">New Brunswick</option>
+						<option value="newfoundland">Newfoundland</option>
+						<option value="northwest_territories">Northwest Territories</option>
+						<option value="nova_scotia">Nova Scotia</option>
+						<option value="nunavut">Nunavut</option>
+						<option value="ontario">Ontario</option>
+						<option value="pei">Prince Edward Island</option>
+						<option value="quebec">Quebec</option>
+						<option value="saskatchewan">Saskatchewan</option>
+						<option value="yukon">Yukon</option>
+					</select>
+				</div>	
+				<div id="country-drop-container" class="form-elm">
+					<label for="country">Country</label>
+					<!--This is the Country drop down box. -->
+					<select name="country" id="country">
+						<option value="canada">Canada</option>
+						<option value="usa">United States</option>
+					</select>
+				</div>
+
+				<div id="postcode-container" class="form-elm">
+					<label for="postcode">Postal Code</label>
+					<!--This is the Postal Code text box. -->
+					<textarea name="postcode" id="postcode" placeholder="Enter postal code here">
+					</textarea>
+				</div>
+
+				<div id="interests-container" class="form-elm">
+					<h3>Hobbies/Interests</h3>
+					<!--This is the check box section. -->
+					<label for="reading">Reading</label>
+					<input type="checkbox" name="interests" id="reading" value="reading"> <br>
+
+					<label for="cooking">Cooking</label>
+					<input type="checkbox" name="interests" id="cooking" value="cooking"> <br>
+
+					<label for="knitting">Knitting</label>
+					<input type="checkbox" name="interests" id="knitting" value="knitting"> <br>
+
+					<label for="tennis">Tennis</label>
+					<input type="checkbox" name="interests" id="tennis" value="tennis"> <br>
+
+					<label for="travel">Travel</label>
+					<input type="checkbox" name="interests" id="travel" value="travel"> <br>
+
+					<label for="bungee_jumping">Bungee jumping</label>
+					<input type="checkbox" name="interests" id="bungeejumping" value="bungeejumping"> <br>
+				</div>
+				<div id="st-container" class="form-elm">
+					<label for="ur">Enter a URL</label>	
+					<input type="url" name="ur" id="ur" ><br>
+				</div>
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
