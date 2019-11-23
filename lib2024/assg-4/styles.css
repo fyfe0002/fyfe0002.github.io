@@ -23,7 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -93,13 +93,11 @@ img {
 	float: right;
 	width: calc(100% - 100px);
 	display: none;
-	/*max width is used in fluid layout to restrict the width of elements that are set to 100% width*/
-	/*This is to make sure the content remains in the readable area for screen sizes that are larger than a tablet*/
 	max-width: 600px;
 }
 
 .desktop-nav ul {
-	width:100%;
+	width:20%;
 }
 
 .desktop-nav li {
