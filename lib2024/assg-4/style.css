@@ -65,21 +65,20 @@ table {
 	BG White : #ffffff;
 	
 */
-
-/************************
-		MOBILE FIRST
-************************/
-
-/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
-.col-main, .col-footer, img {
+.col-main, .col-footer, {
 	width:100%;
 }
 
-/* Header styles */ 
+ 
 header {
 	background: #6bf091;
 
 }
+
+img { 
+	width: 30%;
+	padding: 2.5%;
+ }
 
 .logo {
 	float: left;
