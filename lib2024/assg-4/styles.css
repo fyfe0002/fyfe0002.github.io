@@ -65,7 +65,7 @@ table {
 	BG White : #ffffff;
 	
 */
-.col-main, .col-footer, {
+.col-main .col-footer {
 	width:100%;
 }
 
@@ -115,29 +115,7 @@ img {
 }
 
 
-.ham {
-	float: right;
-	background: #BBDEFB;
-}
 
-.mobile-nav {
-	width:100%;
-	clear: both;
-}
-
-.mobile-nav-container {
-	position: relative;
-	clear: both;
-}
-
-.mobile-nav li {
-	box-sizing: border-box;
-	width:100%;
-	padding: 10px;
-	background: #FFEB3B;
-	border-bottom: 2px solid #121212;
-
-}
 
 
 
@@ -166,26 +144,20 @@ footer {
 	box-sizing: border-box;
 }
 
-.company-info {
-	background: #1976D2;
-}
 
-.links {
-	background: #FFEB3B;
-}
 
 .social-media {
 	background: #757575;
 }
 
-/*This media query will only target the tablet size*/
+
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 	header {
 		background: #FFEB3B;
 	}
 }
 
-/*This media query targets, tablet and above*/
+
 @media only screen and (min-width: 768px) {
 	
 	/*header styles*/
