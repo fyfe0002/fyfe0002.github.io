@@ -9,15 +9,14 @@
 	<meta name="description" content="This is Assignment 4">
 </head>
 <body>
-	<header class="site-header clearfix">
-			<!-- img tag is used to add images -->
-			<!-- src attr is used to specify the path of the image that we are accessing  -->
-			<!-- All the path of the images are relative to your HTML document -->
-			<!-- / is used to access content inside a folder, here we use images/ to acess images inside "images" folder -->
-		<img src="logo.png" class="logo clearfix" alt="Kitten website logo">
+	<header class="site-header">
+		<div class="clearfix">
+			<img src="logo.png" class="logo" alt="Kitten website logo">
 			<h1>Title of Page</h1>
+		</div>
+		<!-- target a tag for box width -->
 			<nav>
-				<ul>
+				<ul class="clearfix">
 					<li>
 						<a href="home.html">Home</a>
 					</li>
@@ -33,29 +32,27 @@
 				</ul>
 			</nav>
 	</header>	
-			<main id="main" class="main clearfix">
-			<!-- any styles applied to the parent element will be inhereited by the children -->
-			<!-- This can be overwritten by adding the same property in the child element -->
+		<main id="main" class="main clearfix">
 			<section>
-				<!-- by adding font-style:initial we override the value of the font-style css rpoperty from the parent section and set it to be the inital value which is the default Browser style -->
+				<article class="site-content">
 				<h2 class="sub-head">Main Title Content</h2>
-				<p >
-					Biscuit liquorice fruitcake dessert. Bear claw chupa chups liquorice topping topping icing sweet roll biscuit. Danish bear claw oat cake liquorice ice cream marshmallow apple pie. Pudding chocolate bar cake jelly beans caramels carrot cake. Sesame snaps dessert gingerbread gummi bears croissant candy chocolate cake. Tart cupcake sweet roll pastry macaroon jelly-o cake brownie dessert. Chocolate cake brownie soufflé. Macaroon icing wafer cookie tootsie roll cake. Chocolate bar cake tiramisu chupa chups chocolate jelly beans topping donut.
-				</p>
-				<p>
-					Sweet roll cake jelly apple pie chupa chups wafer. Cake chocolate cake lollipop sweet roll bear claw sugar plum topping tiramisu chupa chups. Chocolate bar cupcake pastry cake. Fruitcake pastry icing dessert sugar plum. Candy cupcake chocolate cake ice cream chupa chups liquorice. Pudding candy canes ice cream powder.
-				</p>
+						<p >
+						Biscuit liquorice fruitcake dessert. Bear claw chupa chups liquorice topping topping icing sweet roll biscuit. Danish bear claw oat cake liquorice ice cream marshmallow apple pie. Pudding chocolate bar cake jelly beans caramels carrot cake. Sesame snaps dessert gingerbread gummi bears croissant candy chocolate cake. Tart cupcake sweet roll pastry macaroon jelly-o cake brownie dessert. Chocolate cake brownie soufflé. Macaroon icing wafer cookie tootsie roll cake. Chocolate bar cake tiramisu chupa chups chocolate jelly beans topping donut.
+						</p>
+						<p>
+						Sweet roll cake jelly apple pie chupa chups wafer. Cake chocolate cake lollipop sweet roll bear claw sugar plum topping tiramisu chupa chups. Chocolate bar cupcake pastry cake. Fruitcake pastry icing dessert sugar plum. Candy cupcake chocolate cake ice cream chupa chups liquorice. Pudding candy canes ice cream powder.
+						</p>
+				</article>
+				<aside class="sidebar">
+					<h3 class="section-title">Title of the sidebar</h3>
+						<p>
+						Chocolate cake tart carrot cake powder pudding lemon drops dragée dragée. Tiramisu sweet roll marshmallow tiramisu. Jelly beans cake jelly jelly cake toffee dessert. Liquorice cake caramels cake caramels sweet roll dragée.
+						</p>
+				</aside>
 			</section>
-		</main>
-		<aside class="sidebar">
-			<section>
-				<h3 class="section-title">Title of the sidebar</h3>
-				<p>
-					Chocolate cake tart carrot cake powder pudding lemon drops dragée dragée. Tiramisu sweet roll marshmallow tiramisu. Jelly beans cake jelly jelly cake toffee dessert. Liquorice cake caramels cake caramels sweet roll dragée.
-				</p>
-			</section>
-		</aside>
-		<section class="image-gallery">
+		
+		
+			<section class="image-gallery">
 				<h3>Secondary Content Title</h3>
 				<div class="image-gallery-container clearfix">
 					<div class="img-slide">
@@ -69,24 +66,22 @@
 					</div>
 				</div>
 			</section>
+		</main>	
 	<footer>
-		<div>
-			<p>Copyright &copy; 2019, All Rights Reserved</p>
-		</div>
 		<section class="col-footer social-media">
-				
-				<nav>
-					<ul>
-						<li>
+			<p>Copyright &copy; 2019, All Rights Reserved</p>
+			<nav>
+				<ul>
+					<li>
 							<a href="facebook.com">Facebook</a>
-						</li>
-						<li>
+					</li>
+					<li>
 							<a href="youtube.com">YouTube</a>
-						</li>
-						<li>
+					</li>
+					<li>
 							<a href="twitter.com">Twitter</a>
-						</li>
-					</ul>
-				</nav>
-			</section>
+					</li>
+				</ul>
+			</nav>
+		</section>
 	</footer>
