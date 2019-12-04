@@ -8,34 +8,33 @@
 	<meta name="Author" content="Leslie Golding">
 	<meta name="description" content="This is the final assignment">
 </head>
-<body>
-	<header class="site-header">
-		<div class="clearfix">
-			<h1>My Logo</h1>
-		</div>
-			<nav>
-				<ul class="clearfix">
-					<li>
-						<a href="home.html">Home</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="schedule.html">Schedule</a>
-					</li>
-					<li>
-						<a href="portfolio.html">Portfolio</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</nav>
-	</header>
-	<main id="main" class="main clearfix">
-		<section>
-			<article class="site-content">
+<header class="site-header">
+	<div class="clearfix">
+		<h1>My Logo</h1>
+	</div>
+		<nav>
+			<ul class="clearfix">
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="schedule.html">Schedule</a>
+				</li>
+				<li>
+					<a href="portfolio.html">Portfolio</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+</header>
+<main id="main" class="main clearfix">
+	<section>
+		<article class="site-content">
 			<h2 class="sub-head">About</h2>
 				<p >
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat lacus nec mattis dapibus. Cras ante est, rhoncus sit amet consectetur sit amet, tempus nec velit. Morbi molestie mollis facilisis. Mauris ut nunc sapien. Nam auctor ac ligula in ultricies. Sed porttitor at justo vel iaculis. Pellentesque vel tortor et nisi ullamcorper dignissim sed id odio. Phasellus semper sagittis gravida. Donec dapibus lacus vulputate enim laoreet condimentum. In imperdiet sapien nunc, vitae ornare neque vestibulum non.
@@ -43,17 +42,65 @@
 				<p>
 				Sed lobortis non ligula id maximus. Nullam aliquam ornare turpis eget posuere. Praesent risus lacus, volutpat eu felis bibendum, eleifend tristique sapien. Pellentesque hendrerit ligula eu nisl malesuada, eget lacinia turpis blandit. Curabitur imperdiet libero ut augue vestibulum accumsan. Nullam nibh ex, mollis nec lacus a, aliquet commodo sapien. Donec auctor finibus elementum. Etiam aliquet nisl at est vestibulum blandit. Cras auctor pellentesque lorem, in ultricies risus interdum id. Morbi volutpat nunc lacus, vitae vestibulum lorem eleifend vehicula. Duis aliquam libero eget urna pretium porttitor. Nunc iaculis eros non dictum tempus. Quisque eget odio id nibh ultrices sagittis. Maecenas vestibulum sit amet purus ac ornare. Suspendisse vitae augue ultricies, congue velit ut, dictum lectus.
 				</p>
-			</article>
-			<aside class="sidebar">
-				<div class="image-gallery-container clearfix">
-					<div class="img-slide">
-						<img src="img/img-1.jpg" alt="Image 1">
-					</div>
-			</aside>
-		</section>
-		<section></section>
-		<section></section>
-</body>
+		</article>
+		<aside class="sidebar">
+			<div class="image-gallery-container clearfix">
+				<div class="img-slide">
+					<img src="img/img-1.jpg" alt="Image 1">
+				</div>
+		</aside>
+	</section>
+	<section></section>
+	<section id="html-forms" class="main-section">
+		<h3 class="sub-head">Edit Profile</h3>
+			<form action="somepage.php" method="get">
+				<div id="name-container" class="form-elm">
+					<label for="name">Name:</label>
+					<!--This is the Name text box. -->
+					<input type="text" name="name" id="name">
+				</div>
+				<div id="email-container" class="form-elm">
+					<label for="email">Email:</label>
+					<!--This is the Email text box. I did not make it readonly, so that information could be entered into the form.-->
+					<input type="email" name="email" id="email" value="example@g.com">
+				</div>
+				<div id="address-container" class="form-elm">
+					<label for="address">Address:</label>
+					<!--This is the Address text box. -->
+					<input type="text" name="address" id="address">
+				</div>
+				<div id="city-container" class="form-elm">
+					<label for="city">City:</label>
+					<!--This is the City text box. -->
+					<input type="text" name="city" id="city">
+				</div>
+				<div id="province-drop-container" class="form-elm">
+					<label for="province">Province:</label>
+					<!--This is the Province drop down box. -->
+					<select name="province" id="province">
+						<option value="alberta">Alberta</option>
+						<option value="british_columbia">British Columbia</option>
+						<option value="manitoba" selected>Manitoba</option>
+						<option value="new_brunswick">New Brunswick</option>
+						<option value="newfoundland">Newfoundland</option>
+						<option value="northwest_territories">Northwest Territories</option>
+						<option value="nova_scotia">Nova Scotia</option>
+						<option value="nunavut">Nunavut</option>
+						<option value="ontario">Ontario</option>
+						<option value="pei">Prince Edward Island</option>
+						<option value="quebec">Quebec</option>
+						<option value="saskatchewan">Saskatchewan</option>
+						<option value="yukon">Yukon</option>
+					</select>
+				</div>
+				<div id="postcode-container" class="form-elm">
+					<label for="postcode">Postal Code:</label>
+					<!--This is the Postal Code text box. -->
+					<textarea name="postcode" id="postcode" value="A0A 0A0">
+					</textarea>
+				</div>	
+	</section>
+</main>
 <footer>
 
 	<section class="col-footer quick-links">
