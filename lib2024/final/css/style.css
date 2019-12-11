@@ -48,6 +48,7 @@ table {
 	border-spacing: 0;
 }
 
+/*CSS clearfix*/
 
 .clearfix:after {
 	content: "";
@@ -55,14 +56,13 @@ table {
 	clear: both;
 }
 
-
 .col-main, .col-footer, img {
 	width:100%;
 }
 
 
 header {
-	background: #72a9ae;
+	background: #757575;
 
 }
 
@@ -71,7 +71,7 @@ header {
 	width:120px;
 	padding: 15px;
 	box-sizing: border-box;
-	background: #1976D2;
+	background: #ffffff;
 	/*box-sizing border box makes the width adjust according to padding*/
 }
 
@@ -96,16 +96,15 @@ header {
 	width: 25%;
 	padding: 10px;
 	float: left;
-	/*This is required to make sub-nav positioned absolute to the main navigation li containers*/
 	position: relative;
+	background: #ffffff;
 }
 
-/*Target the first child and add border-top-left, border-bottom-left radius*/
 .desktop-nav li:first-child {
 	border-radius: 10px 0 0 10px;
 }
 
-/*target the last child and add border-top-right and border-top-left radius*/
+
 .desktop-nav li:last-child {
 	border-radius: 0 10px 10px 0;
 }
@@ -115,10 +114,10 @@ header {
 	box-sizing: border-box;
 	padding: 10px;
 	border-left: 2px solid #444;
-	background: #F44336;
+	background: #ffffff;
 }
 
-/* Target the first child and remove border-left from the a tag contained in that li*/
+
 .desktop-nav li:first-child a {
 	border-left: 0;
 } 
@@ -151,7 +150,7 @@ header {
 
 .ham {
 	float: right;
-	/*background: #BBDEFB;*/
+	
 }
 
 .ham {
@@ -161,7 +160,6 @@ header {
 		padding-top: 5px;
 		position: relative;
 		float: right;
-		/*this is used to create a pointer for element*/
 		cursor: pointer;
 	}
 
@@ -202,13 +200,10 @@ header {
 	box-sizing: border-box;
 	width:100%;
 	padding: 10px;
-	background: lightgreen;
-	border-bottom: 2px solid #121212;
+	border-bottom: 2px solid #ffffff;
 
 }
 
-
-/******Image Gallery ****/
 
 .image-gallery-overlay{
 	position: fixed;
@@ -224,7 +219,7 @@ header {
 	transition: all ease 0.3s;
 }
 
-/*making the image slide thumb active class and giving it opacity:1; */
+
 .image-gallery .img-slide-thumb.img-slide-thumb-active img, 
 .image-gallery .img-slide-thumb:hover img{
 	opacity: 1;
@@ -255,14 +250,14 @@ header {
 
 .site-content {
 
-	background: #BBDEFB;
+	background: #ffffff;
 	padding: 15px;
 	width:100%;
 	box-sizing: border-box;
 }
 
 .site-sidebar {
-	background: #1976D2;
+	background: #ffffff;
 	padding: 15px;
 	width: 100%;
 	box-sizing: border-box;
@@ -278,28 +273,30 @@ header {
 
 /*footer styles*/
 footer {
-	background: #F44336;
+	background: #F454545;
 	padding: 15px;
 	width: 100%;
 	box-sizing: border-box;
 }
 
-.company-info {
-	background: #1976D2;
-}
+
 
 .links {
-	background: #FFEB3B;
+	background: #454545;
 }
 
 .social-media {
-	background: #757575;
+	background: #454545;
+}
+
+.address {
+	background: #454545;
 }
 
 /*This media query will only target the tablet size*/
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 	header {
-		background: #FFEB3B;
+		background: #ffffff;
 	}
 }
 
@@ -398,6 +395,6 @@ footer {
 /*The following media query targets the screen sizes that are less than 768px*/
 @media only screen and (max-width: 768px) {
 	footer {
-		background: #FFEB3B;
+		background: #454545;
 	}
 }
