@@ -173,9 +173,13 @@
 					</p>
 
 					<p>
-						<strong>Ans: </strong>
-						
-						
+						<strong>Ans: </strong> 
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						width: 200px;
+						height: 200px;
+						margin: -100px 0 0 -100px;			
 					</p>
 				</li>
 				<!-- Qus 14 -->
@@ -187,8 +191,13 @@
 
 					<p>
 						<strong>Ans: </strong>
-						
-						
+						@keyframes spin {
+						from {
+						transform: rotate(0deg);
+						}
+						to {
+						transform: rotate(360deg);
+						}
 					</p>
 				</li>
 				<!-- Qus 15 -->
@@ -203,8 +212,30 @@
 
 					<p>
 						<strong>Ans: </strong>
+						<animation class="rotate-me">
+						animation: 
+						spin 0.5s linear 5x,
+						@keyframes spin {
+						from {
+						transform: rotate(0deg);
+						}
+						to {
+						transform: rotate(360deg);
+						}
+						</animation>
+					</p>
+				</li>
+				<!-- Qus 16 -->
+				<li>
+					<p>
+						<strong>Qus: </strong>
+						How would you include create an alert with string "I love JavaScript" using JavaScript? 
+					</p>
+
+					<p>
+						<strong>Ans: </strong>
 						
-						
+						.alert("I love JavaScript");
 					</p>
 				</li>
 			</ol>
